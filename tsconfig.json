@@ -2,7 +2,11 @@
   "compilerOptions": {
     "rootDir": ".",
     "paths": {
-      "rn-kun-kits": ["./src/index"]
+      "rn-kun-kits": ["./src/index"],
+      "@env": ["./env-config.ts"],
+      "@common/*": ["./src/common/*"],
+      "@theme": ["./src/themes/index"],
+      "@theme/*": ["./src/themes/*"],
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
@@ -23,6 +27,9 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
-    "verbatimModuleSyntax": true
-  }
+    "verbatimModuleSyntax": true,
+    "allowSyntheticDefaultImports": true,
+  },
+  "exclude": ["node_modules", "example"] // Nếu bạn có thư mục `example`
+
 }

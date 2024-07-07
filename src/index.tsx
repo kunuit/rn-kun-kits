@@ -1,4 +1,6 @@
 import { NativeModules, Platform } from 'react-native';
+import * as KKComponents from './components';
+import * as KKCommon from './common';
 
 const LINKING_ERROR =
   `The package 'rn-kun-kits' doesn't seem to be linked. Make sure: \n\n` +
@@ -20,3 +22,5 @@ const RnKunKits = NativeModules.RnKunKits
 export function multiply(a: number, b: number): Promise<number> {
   return RnKunKits.multiply(a, b);
 }
+
+export { KKComponents, KKCommon }

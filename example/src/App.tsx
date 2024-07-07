@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'rn-kun-kits';
+import { multiply, KKComponents } from 'rn-kun-kits';
 
 export default function App() {
   const [result, setResult] = useState<number | undefined>();
@@ -12,6 +12,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Result: {result}</Text>
+      <KKComponents.Line />
     </View>
   );
 }

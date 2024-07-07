@@ -1,0 +1,18 @@
+{
+  "env": {
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "@env": "./env-config",
+          "@assets": "./src/assets",
+          "@common": "./src/common",
+          "@theme": "./src/themes"
+        }
+      }
+    ]
+  ]
+}
