@@ -1,0 +1,38 @@
+{
+  "name": "RnKunKitsExample",
+  "displayName": "RnKunKitsExample",
+  "components": [
+    {
+      "appKey": "RnKunKitsExample",
+      "displayName": "RnKunKitsExample"
+    }
+  ],
+  "resources": {
+    "android": [
+      "dist/res",
+      "dist/main.android.jsbundle"
+    ],
+    "ios": [
+      "dist/assets",
+      "dist/main.ios.jsbundle"
+    ],
+    "macos": [
+      "dist/assets",
+      "dist/main.macos.jsbundle"
+    ],
+    "visionos": [
+      "dist/assets",
+      "dist/main.visionos.jsbundle"
+    ],
+    "windows": [
+      "dist/assets",
+      "dist/main.windows.bundle"
+    ]
+  },
+  "android": {
+    "package": "rnkunkits.example"
+  },
+  "ios": {
+    "bundleIdentifier": "rnkunkits.example"
+  }
+}
